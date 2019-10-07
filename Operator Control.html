@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://trailer.precisionape.com/OperatorControl/ -->
+<html>
+
+<head>
+
+	<title>Operator Control</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--External CSS styling-->
+	<link rel="stylesheet" type="text/css" href="styling.css">
+
+	<!--Favicon-->
+	<link rel="icon" href="./Operator Control_files/favicon.png">
+
+	<!--Bootstrap import-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+	<div class="links">
+		<a href="https://trailer.precisionape.com/OperatorControl/admin"><button type="button"
+				class="btn btn-primary adminButton">Admin</button></a>
+	</div>
+
+	<h1 class="display-3 operatorControlHeader">Operator Control</h1>
+
+
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col">
+
+				<!--Column one-->
+				<div class="group">
+
+					<h1 class="display-4">Extraction</h1>
+
+					<div class="indicators">
+						<div>
+							<span id="indicator-input-54" class="on"><img src="./Operator Control_files/alarm.png">
+								E-STOP</span>
+						</div>
+					</div>
+
+
+					<div class="options">
+						<img src="./Operator Control_files/option.png">
+
+						<form method="post">
+							<label><input id="option-control-86" type="checkbox">EXC-4 Heater ( Blanket: 60-65 )</label>
+						</form>
+					</div>
+
+
+					<div class="temperatures">
+						<img src="./Operator Control_files/temperature.png">
+
+						<div>
+							<label for="temperature-input-47">CO2 Prechill (TC0)</label>
+							<output id="temperature-input-47" class="ERROR">?</output>
+						</div>
+
+						<div>
+							<label for="temperature-input-48">CO2 Supply (TC2)</label>
+							<output id="temperature-input-48" class="ERROR">?</output>
+						</div>
+
+						<div>
+							<label for="temperature-input-49">C4 Liquid CO2 (TC3)</label>
+							<output id="temperature-input-49" class="NORMAL">19 °C</output>
+						</div>
+
+						<div>
+							<label for="temperature-input-50">C4 Heater (Top TC0)</label>
+							<output id="temperature-input-50" class="NORMAL">15 °C</output>
+						</div>
+					</div>
+
+
+					<div class="pressures">
+						<img src="./Operator Control_files/pressure.png">
+
+						<div>
+							<label for="pressure-input-52">C4 Pressure</label>
+							<output id="pressure-input-52">?</output>
+						</div>
+					</div>
+
+
+					<div class="relays">
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-55" type="checkbox">
+							<label class="tgl-btn" data-tg-off="E-Stop Control (B1:P1) OFF"
+								data-tg-on="E-Stop Control (B1:P1) ON" for="relay-control-55"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-56" type="checkbox">
+							<label class="tgl-btn" data-tg-off="12 VDC Reset (B1:P2) OFF"
+								data-tg-on="12 VDC Reset (B1:P2) ON" for="relay-control-56"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-57" type="checkbox">
+							<label class="tgl-btn" data-tg-off="CDA Pump (B1:P3) OFF" data-tg-on="CDA Pump (B1:P3) ON"
+								for="relay-control-57"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-58" type="checkbox">
+							<label class="tgl-btn" data-tg-off="CO2 Chiller (B1:P4) OFF"
+								data-tg-on="CO2 Chiller (B1:P4) ON" for="relay-control-58"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-59" type="checkbox">
+							<label class="tgl-btn" data-tg-off="CO2 Pump (B1:P5) OFF" data-tg-on="CO2 Pump (B1:P5) ON"
+								for="relay-control-59"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-60" type="checkbox">
+							<label class="tgl-btn" data-tg-off="CO2 High PSI (B1:P6) OFF"
+								data-tg-on="CO2 High PSI (B1:P6) ON" for="relay-control-60"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-61" type="checkbox">
+							<label class="tgl-btn" data-tg-off="CO2 Mix Pump (B1:P7) OFF"
+								data-tg-on="CO2 Mix Pump (B1:P7) ON" for="relay-control-61"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-62" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EXC-1 Supply (B2:P1) OFF"
+								data-tg-on="EXC-1 Supply (B2:P1) ON" for="relay-control-62"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-63" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EXC-1 Out (B2:P2) OFF" data-tg-on="EXC-1 Out (B2:P2) ON"
+								for="relay-control-63"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-64" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EXC-1 Mix (B2:P3) OFF" data-tg-on="EXC-1 Mix (B2:P3) ON"
+								for="relay-control-64"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-65" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EXC-1 Pass Thru (B2:P4) OFF"
+								data-tg-on="EXC-1 Pass Thru (B2:P4) ON" for="relay-control-65"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-66" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EXC-2 Supply (B2:P5) OFF"
+								data-tg-on="EXC-2 Supply (B2:P5) ON" for="relay-control-66"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-67" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EXC-2 Out (B2:P6) OFF" data-tg-on="EXC-2 Out (B2:P6) ON"
+								for="relay-control-67"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-68" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EXC-2 Mix (B2:P7) OFF" data-tg-on="EXC-2 Mix (B2:P7) ON"
+								for="relay-control-68"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-69" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EXC-2 Pass Thru (B2:P8) OFF"
+								data-tg-on="EXC-2 Pass Thru (B2:P8) ON" for="relay-control-69"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-70" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EXC-3 Supply (B3:P1) OFF"
+								data-tg-on="EXC-3 Supply (B3:P1) ON" for="relay-control-70"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-71" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EXC-3 Out (B3:P2) OFF" data-tg-on="EXC-3 Out (B3:P2) ON"
+								for="relay-control-71"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-72" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EXC-3 Mix (B3:P3) OFF" data-tg-on="EXC-3 Mix (B3:P3) ON"
+								for="relay-control-72"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-73" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EXC-3 Pass Thru (B3:P4) OFF"
+								data-tg-on="EXC-3 Pass Thru (B3:P4) ON" for="relay-control-73"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-74" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EXC-4 Supply (B3:P5) OFF"
+								data-tg-on="EXC-4 Supply (B3:P5) ON" for="relay-control-74"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-75" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EXC-4 Out (B3:P6) OFF" data-tg-on="EXC-4 Out (B3:P6) ON"
+								for="relay-control-75"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-76" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EXC-4 Mix (B3:P7) OFF" data-tg-on="EXC-4 Mix (B3:P7) ON"
+								for="relay-control-76"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-77" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EXC-4 Pass Thru (B3:P8) OFF"
+								data-tg-on="EXC-4 Pass Thru (B3:P8) ON" for="relay-control-77"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-78" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EXC-1 Heater Upper (B4:P1) OFF"
+								data-tg-on="EXC-1 Heater Upper (B4:P1) ON" for="relay-control-78"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-79" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EXC-1 Heater Lower (B4:P2) OFF"
+								data-tg-on="EXC-1 Heater Lower (B4:P2) ON" for="relay-control-79"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-80" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EXC-2 Heater Lower (B4:P3) OFF"
+								data-tg-on="EXC-2 Heater Lower (B4:P3) ON" for="relay-control-80"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-81" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EXC-2 Heater Upper (B4:P4) OFF"
+								data-tg-on="EXC-2 Heater Upper (B4:P4) ON" for="relay-control-81"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-82" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EXC-3 Heater Upper (B4:P5) OFF"
+								data-tg-on="EXC-3 Heater Upper (B4:P5) ON" for="relay-control-82"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-83" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EXC-3 Heater Lower (B4:P6) OFF"
+								data-tg-on="EXC-3 Heater Lower (B4:P6) ON" for="relay-control-83"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-84" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EXC-4 Heater Upper (B4:P7) OFF"
+								data-tg-on="EXC-4 Heater Upper (B4:P7) ON" for="relay-control-84"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-85" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EXC-4 Heater Upper (B4:P7) OFF"
+								data-tg-on="EXC-4 Heater Upper (B4:P7) ON" for="relay-control-85"></label>
+						</form>
+
+					</div>
+
+
+					<div class="heartbeats">
+						<img src="./Operator Control_files/heartbeat.png">
+
+						<div>
+							<label for="heartbeat-input-46">Heartbeat (Temp #1 Arduino @ 10.0.0.122)</label>
+							<output id="heartbeat-input-46" class="">12:13:06 PM</output>
+						</div>
+
+						<div>
+							<label for="heartbeat-input-51">Heartbeat (Pressure Arduino @ 10.0.0.160)</label>
+							<output id="heartbeat-input-51" class="">12:13:06 PM</output>
+						</div>
+
+						<div>
+							<label for="heartbeat-input-53">Heartbeat (Relay Arduino @ 10.0.0.185)</label>
+							<output id="heartbeat-input-53" class="">12:13:06 PM</output>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+			<div class="col">
+				<h1 class="display-4">Filler Text</h1>
+			  </div>
+
+
+
+
+			<div class="col">
+				<!--Column Three-->
+
+				<div class="group">
+
+					<h1 class="display-4">Evaporation</h1>
+
+					<div class="indicators">
+						<div>
+							<span id="co2input-14" class=""><img src="./Operator Control_files/alarm.png">CO2
+								514ppm</span>
+						</div>
+					</div>
+
+
+					<div class="options">
+						<img src="./Operator Control_files/option.png">
+
+						<form method="post">
+							<label><input id="option-control-30" type="checkbox">EVC-1 Heater Upper ( Chamber: 38-43 |
+								Blanket:
+								60-65 )</label>
+						</form>
+
+						<form method="post">
+							<label><input id="option-control-32" type="checkbox">EVC-1 Heater Middle ( Chamber: 38-43 |
+								Blanket:
+								60-65 )</label>
+						</form>
+
+						<form method="post">
+							<label><input id="option-control-34" type="checkbox">EVC-1 Heater Neck ( Blanket: 60-65
+								)</label>
+						</form>
+
+						<form method="post">
+							<label><input id="option-control-36" type="checkbox">EVC-1 Heater Bowl ( Chamber: 48-53 |
+								Blanket: 70-75
+								)</label>
+						</form>
+
+						<form method="post">
+							<label><input id="option-control-37" type="checkbox">EVC-1 All Heaters</label>
+						</form>
+
+					</div>
+
+					<div class="temperatures">
+						<img src="./Operator Control_files/temperature.png">
+
+						<div>
+							<label for="temperature-input-1">EVC-1 Top (EV-1-TC-1)</label>
+							<output id="temperature-input-1" class="NORMAL">28 °C</output>
+						</div>
+
+						<div>
+							<label for="temperature-input-2">EVC-1 Upper (EV-1-TC-2)</label>
+							<output id="temperature-input-2" class="WARNING">28 °C</output>
+						</div>
+
+						<div>
+							<label for="temperature-input-3">EVC-1 Middle (EV-1-TC-3)</label>
+							<output id="temperature-input-3" class="WARNING">28 °C</output>
+						</div>
+
+						<div>
+							<label for="temperature-input-4">EVC-1 Bowl (EV-1-TC-4)</label>
+							<output id="temperature-input-4" class="ERROR">30 °C</output>
+						</div>
+
+						<div>
+							<label for="temperature-input-5">EVC-1 HR Upper (EV-1-TC-5)</label>
+							<output id="temperature-input-5" class="ERROR">28 °C</output>
+						</div>
+
+						<div>
+							<label for="temperature-input-6">EVC-1 HR Middle (EV-1-TC-6)</label>
+							<output id="temperature-input-6" class="ERROR">29 °C</output>
+						</div>
+
+						<div>
+							<label for="temperature-input-7">EVC-1 HR Neck (EV-1-TC-7)</label>
+							<output id="temperature-input-7" class="ERROR">29 °C</output>
+						</div>
+
+						<div>
+							<label for="temperature-input-8">EVC-1 HR Bowl (EV-1-TC-8)</label>
+							<output id="temperature-input-8" class="ERROR">29 °C</output>
+						</div>
+
+						<div>
+							<label for="temperature-input-10">CO2 Tank Supply</label>
+							<output id="temperature-input-10" class="NORMAL">23 °C</output>
+						</div>
+
+						<div>
+							<label for="temperature-input-11">CO2 Tank Return</label>
+							<output id="temperature-input-11" class="NORMAL">22 °C</output>
+						</div>
+
+						<div>
+							<label for="temperature-input-12">CO2 Recovery</label>
+							<output id="temperature-input-12" class="ERROR">?</output>
+						</div>
+
+						<div>
+							<label for="temperature-input-13">CO2 EV Chamber Return</label>
+							<output id="temperature-input-13" class="NORMAL">31 °C</output>
+						</div>
+					</div>
+
+
+
+					<div class="pressures">
+						<img src="./Operator Control_files/pressure.png">
+
+						<div>
+							<label for="pressure-input-16">C1 Pressure</label>
+							<output id="pressure-input-16">-2 PSI</output>
+						</div>
+
+						<div>
+							<label for="pressure-input-17">N2 Back Pressure</label>
+							<output id="pressure-input-17">209 PSI</output>
+						</div>
+					</div>
+
+
+
+					<div class="relays">
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-19" type="checkbox">
+							<label class="tgl-btn" data-tg-off="E-Stop (B1:P1) OFF" data-tg-on="E-Stop (B1:P1) ON"
+								for="relay-control-19"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-20" type="checkbox">
+							<label class="tgl-btn" data-tg-off="12 VDC Reset (B1:P2) OFF"
+								data-tg-on="12 VDC Reset (B1:P2) ON" for="relay-control-20"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-21" type="checkbox">
+							<label class="tgl-btn" data-tg-off="Spare (B1:P3) OFF" data-tg-on="Spare (B1:P3) ON"
+								for="relay-control-21"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-22" type="checkbox">
+							<label class="tgl-btn" data-tg-off="Spare (B1:P4) OFF" data-tg-on="Spare (B1:P4) ON"
+								for="relay-control-22"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-23" type="checkbox">
+							<label class="tgl-btn" data-tg-off="CO2 Supply (B1:P5) OFF"
+								data-tg-on="CO2 Supply (B1:P5) ON" for="relay-control-23"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-24" type="checkbox">
+							<label class="tgl-btn" data-tg-off="Booster Pump (B1:P6) OFF"
+								data-tg-on="Booster Pump (B1:P6) ON" for="relay-control-24"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-25" type="checkbox">
+							<label class="tgl-btn" data-tg-off="CO2 Recovery (B1:P7) OFF"
+								data-tg-on="CO2 Recovery (B1:P7) ON" for="relay-control-25"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-26" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EVC-1 Supply (B2:P1) OFF"
+								data-tg-on="EVC-1 Supply (B2:P1) ON" for="relay-control-26"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-27" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EVC-2 Supply (B2:P2) OFF"
+								data-tg-on="EVC-2 Supply (B2:P2) ON" for="relay-control-27"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-28" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EVC-3 Supply (B2:P3) OFF"
+								data-tg-on="EVC-3 Supply (B2:P3) ON" for="relay-control-28"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-29" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EVC-1 HR Upper (B3:P5) OFF"
+								data-tg-on="EVC-1 HR Upper (B3:P5) ON" for="relay-control-29"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-31" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EVC-1 HR Middle (B3:P6) OFF"
+								data-tg-on="EVC-1 HR Middle (B3:P6) ON" for="relay-control-31"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-33" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EVC-1 HR Neck (B3:P7) OFF"
+								data-tg-on="EVC-1 HR Neck (B3:P7) ON" for="relay-control-33"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-35" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EVC-1 HR Bowl (B3:P8) OFF"
+								data-tg-on="EVC-1 HR Bowl (B3:P8) ON" for="relay-control-35"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-38" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EVC-2 HR Upper (B4:P1) OFF"
+								data-tg-on="EVC-2 HR Upper (B4:P1) ON" for="relay-control-38"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-39" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EVC-2 HR Middle (B4:P2) OFF"
+								data-tg-on="EVC-2 HR Middle (B4:P2) ON" for="relay-control-39"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-40" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EVC-2 HR Neck (B4:P3) OFF"
+								data-tg-on="EVC-2 HR Neck (B4:P3) ON" for="relay-control-40"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-41" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EVC-2 HR Bowl (B4:P4) OFF"
+								data-tg-on="EVC-2 HR Bowl (B4:P4) ON" for="relay-control-41"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-42" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EVC-3 HR Upper (B4:P5) OFF"
+								data-tg-on="EVC-3 HR Upper (B4:P5) ON" for="relay-control-42"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-43" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EVC-3 HR Middle (B4:P6) OFF"
+								data-tg-on="EVC-3 HR Middle (B4:P6) ON" for="relay-control-43"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-44" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EVC-3 HR Neck (B4:P7) OFF"
+								data-tg-on="EVC-3 HR Neck (B4:P7) ON" for="relay-control-44"></label>
+						</form>
+
+						<form method="post">
+							<input class="tgl tgl-skewed" id="relay-control-45" type="checkbox">
+							<label class="tgl-btn" data-tg-off="EVC-3 HR Bowl (B4:P8) OFF"
+								data-tg-on="EVC-3 HR Bowl (B4:P8) ON" for="relay-control-45"></label>
+						</form>
+
+					</div>
+
+
+					<div class="heartbeats">
+						<img src="./Operator Control_files/heartbeat.png">
+
+						<div>
+							<label for="heartbeat-input-0">Heartbeat (Temp #1 Arduino @ 10.0.0.118)</label>
+							<output id="heartbeat-input-0" class="">12:13:06 PM</output>
+						</div>
+
+						<div>
+							<label for="heartbeat-input-9">Heartbeat (Temp #2 Arduino @ 10.0.0.116)</label>
+							<output id="heartbeat-input-9" class="">12:13:06 PM</output>
+						</div>
+
+						<div>
+							<label for="heartbeat-input-15">Heartbeat (Pressure Arduino @ 10.0.0.169)</label>
+							<output id="heartbeat-input-15" class="">12:13:06 PM</output>
+						</div>
+
+						<div>
+							<label for="heartbeat-input-18">Heartbeat (Relay Arduino @ 10.0.0.145)</label>
+							<output id="heartbeat-input-18" class="">12:13:06 PM</output>
+						</div>
+
+					</div>
+				</div>
+
+
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript" src="functionality.js"></script>
+
+</body>
+
+</html>
