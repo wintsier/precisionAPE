@@ -1,4 +1,3 @@
-
 		var heartbeats;
 		var ws;
 
