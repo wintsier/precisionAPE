@@ -3,7 +3,7 @@
 			max-height: 2em;
 			width: auto;
 		}
-		
+
 		div.links {
 			clear: left;
 		}
@@ -229,41 +229,87 @@
 		}
 
 		/* Style the tab */
-.tab {
-	overflow: hidden;
-	border: 1px solid #ccc;
-	background-color: #f1f1f1;
-	margin-top: 10px;
-  }
-  
-  /* Style the buttons inside the tab */
-  .tab button {
-	background-color: inherit;
-	float: left;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	padding: 14px 16px;
-	transition: 0.3s;
-	font-size: 17px;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-	background-color: #ddd;
-  }
-  
-  /* Create an active/current tablink class */
-  .tab button.active {
-	background-color: #ccc;
-  }
-  
-  /* Style the tab content */
-  .tabcontent {
-	display: none;
-	padding: 6px 12px;
-	border: 1px solid #ccc;
-	border-top: none;
-	border-bottom: none;
-	margin-bottom: 10px;
-  }
+		.tab {
+			overflow: hidden;
+			border: 1px solid #ccc;
+			background-color: #f1f1f1;
+			margin-top: 10px;
+		}
+
+		/* Style the buttons inside the tab */
+		.tab button {
+			background-color: inherit;
+			float: center;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			padding: 14px 16px;
+			transition: 0.3s;
+			font-size: 17px;
+		}
+
+		/* Change background color of buttons on hover */
+		.tab button:hover {
+			background-color: #ddd;
+		}
+
+		/* Create an active/current tablink class */
+		.tab button.active {
+			background-color: #ccc;
+		}
+
+		/* Style the tab content */
+		.tabcontent {
+			display: none;
+			border: 1px solid #ccc;
+			border-top: none;
+			border-bottom: none;
+			border-right: none;
+			margin-bottom: 10px;
+			width: 100%;
+		}
+
+		#evapHeader {
+			padding-top: 10%;
+			padding-bottom: 5%;
+		}
+
+		#extractHeader {
+			padding-bottom: 5%;
+		}
+		
+		#bootstrap-overrides {
+			padding: 0px 0px 50px 0px;
+			margin: 0px 0px 0px 50px;
+		}
+
+		#colOne {
+			flex-grow: 0;
+			padding-right: 10%;
+		}
+
+		#Chamber1.tabcontent, #Chamber2.tabcontent, #Chamber3.tabcontent, #Chamber4.tabcontent {
+			padding-left: 20px;
+		}
+
+		#EChamber1.tabcontent, #EChamber2.tabcontent, #EChamber3.tabcontent {
+			padding-left: 20px;
+		}
+
+		#relayColTwo {
+			padding-left: 100px;
+		}
+
+		.commentSection {
+			padding-right: 10%;
+			padding-left: 3%;
+			padding-bottom: 20px;
+			padding-top: 10px;
+		}
+
+		
+
+
+
+		
+		  
